@@ -19,13 +19,20 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex items-center justify-between">
-          <Link className="text-white mx-12 text-lg font-semibold" to="/">
+          <Link
+            to="/"
+            className="text-white mx-12 text-lg font-semibold"
+          >
             Home
           </Link>
-          <Link className="text-white mx-12 text-lg font-semibold" to="/">
+          <Link
+            to="/about"
+            className="text-white mx-12 text-lg font-semibold">
             About
           </Link>
-          <Link className="text-white mx-12 text-lg font-semibold" to="/">
+          <Link
+            to="/projects"
+            className="text-white mx-12 text-lg font-semibold">
             Projects
           </Link>
           <button className="text-white border border-secondary/50 px-4 py-1 bg-primary-button rounded-sm mx-12 text-lg font-semibold">
