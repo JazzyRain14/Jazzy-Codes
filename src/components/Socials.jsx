@@ -18,7 +18,7 @@ export const RightSocials = () => {
         <h1 className=" text-white text-lg font-semibold rotate-90">
           ajadiolamilekan14@gmail.com
         </h1>
-        <hr className=" w-1 h-32 border-none bg-white absolute top-40" />
+        <hr className="  bg-white w-1 h-32 border-none absolute top-36 md:top-40" />
       </div>
     </>
   );
@@ -35,7 +35,7 @@ export const LeftSocials = () => {
           <FaTwitter color="white" size={20} />
           <FaGithub color="white" size={20} />
         </div>
-        <hr className=" bg-white w-1 h-32 border-none absolute top-40" />
+        <hr className=" bg-white w-1 h-32 border-none absolute top-36 md:top-40" />
       </div>
     </>
   );

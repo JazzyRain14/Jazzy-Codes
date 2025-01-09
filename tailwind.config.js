@@ -11,7 +11,12 @@ export default {
         'secondary': "#FB4059",
         'primary-button': "#294672",
         'secondary-button': "#FE3E57",
-      }
+      },
+      screens: {
+        'sm': '450px',
+        'md': '750px',
+        'lg': '1024px',
+      },
     },
   },
   plugins: [],
