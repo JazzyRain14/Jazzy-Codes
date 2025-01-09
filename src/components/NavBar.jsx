@@ -14,7 +14,7 @@ const NavBar = ({ openNav }) => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex items-center justify-between md:px-10 lg:mx-24 py-3 lg:py-5">
+      <div className="flex items-center justify-between sm:px-6 md:px-14 lg:mx-24 py-3 lg:py-5">
         <div>
           <Link to="/">
             <h1 className="flex text-secondary text-base lg:text-lg font-semibold gap-0.5 items-center">

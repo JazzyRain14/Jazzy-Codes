@@ -6,6 +6,7 @@ import { GrConnect } from "react-icons/gr";
 import { Link } from "react-router";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "motion/react";
 const Contactpg = () => {
   const [fileName, setFileName] = useState("No file chosen");
   const handleFileChange = (event) => {
@@ -14,11 +15,19 @@ const Contactpg = () => {
   };
 
   return (
-    <div className="overflow-hidden relative md:px-14 lg:px-28 py-10 gap-10 flex justify-between max-md:justify-center items-center h-full w-full">
-      <h1 className="absolute tracking-wider leading-tight translate-x-64 w-full -right-[18%] max-md:-right-[20%] lg:top-0 top-2 text-white flex items-baseline font-bold text-[65px] lg:text-[100px] max-sm:hidden">
-        Contact Me <GoDotFill size={30} className="text-secondary-button" />
-      </h1>
-      <div className="max-md:w-[80%] max-sm:w-full p-5 bg-primary-button">
+    <div className="overflow-hidden relative md:px-14 lg:px-28 py-10 gap-10 flex justify-between max-md:justify-center items-center h-full w-full transition-all duration-300 ease-in-out">
+      <div className="absolute translate-x-48 md:translate-x-64 w-full -right-[18%] max-md:-right-[20%] lg:top-0 top-2 max-sm:hidden  transition-all duration-300 ease-in-out">
+        <motion.h1
+          initial={{ x: "-100%", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", stiffness: 50 }}
+          className="tracking-wider contactANIME absolute leading-tight flex items-baseline font-bold text-[65px] text-gray-800/20 lg:text-[100px]"
+        >
+          Contact Me <GoDotFill size={30} className="text-secondary-button" />
+        </motion.h1>
+      </div>
+      <div className="max-md:w-[80%] max-sm:w-full p-5 bg-primary-button transition-all duration-300 ease-in-out">
         <h1 className="mb-10 text-2xl font-semibold text-white">
           Get Jazzy's Expertise
         </h1>
@@ -117,7 +126,7 @@ const Contactpg = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex flex-col flex-1 space-y-8 hidden">
+      <div className="md:flex  transition-all duration-300 ease-in-out flex-col flex-1 space-y-8 hidden">
         <div className="py-3">
           <h1 className="flex items-center gap-2 text-lg font-semibold text-white/70">
             Email <MdOutlineEmail size={20} />
