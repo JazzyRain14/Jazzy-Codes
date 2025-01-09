@@ -65,7 +65,7 @@ const Menu = ({ isOpen, openNav }) => {
               color="white"
             />
           </a>
-          <a href="">
+          <a href="https://github.com/JazzyRain14">
             <FaGithub
               className="cursor-pointer hoverli"
               size={35}
