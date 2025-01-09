@@ -9,7 +9,8 @@ import About from "./components/About";
 import MyProjects from "./components/MyProjects";
 import Contactpg from "./components/Contactpg";
 import NotFound from "./components/NotFound";
-import Menu from "./components/menu";
+import Menu from "./components/Menu";
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const openNav = () => {
