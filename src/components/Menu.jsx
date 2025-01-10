@@ -5,6 +5,12 @@ import { FaGithub, FaTimes } from "react-icons/fa";
 import { MdCall, MdOutlineEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 const Menu = ({ isOpen, openNav }) => {
+  const navigate = useNavigate();
+
+  const contactMe = () => {
+    navigate("/contactme")
+    openNav()
+  }
   return (
     <>
       <div
@@ -14,29 +20,32 @@ const Menu = ({ isOpen, openNav }) => {
       >
         <FaTimes
           onClick={openNav}
-          className="text-white absolute right-[70px] top-10"
+          className="text-white absolute right-[50px] top-14"
           size={25}
         />
         <Link
           to="/"
+          onClick={openNav}
           className="text-white border py-3 px-6 text-lg font-semibold"
         >
           Home
         </Link>
         <Link
           to="/about"
+          onClick={openNav}
           className=" text-white py-3 px-6 text-lg font-semibold"
         >
           About
         </Link>
         <Link
           to="/projects"
+          onClick={openNav}
           className=" text-white py-3 px-6 text-lg font-semibold"
         >
           Projects
         </Link>
         <button
-          onClick={() => navigate("/contactme")}
+          onClick={contactMe}
           className="text-white border border-secondary/50 py-3 px-6 bg-primary-button rounded-sm lg:mx-12 lg:text-lg font-semibold"
         >
           Let's Talk
@@ -49,9 +58,7 @@ const Menu = ({ isOpen, openNav }) => {
               color="white"
             />
           </a>
-          <a
-            href="https://wa.me/2348061449728?text=i%27ve%20got%20work%20for%20you.%20My%20name%20is%20______.%0A"
-          >
+          <a href="https://wa.me/2348061449728?text=i%27ve%20got%20work%20for%20you.%20My%20name%20is%20______.%0A">
             <MdCall
               className="cursor-pointer hoverli"
               size={35}

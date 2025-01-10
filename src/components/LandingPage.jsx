@@ -33,7 +33,7 @@ const LandingPage = () => {
               }}
             />
           </p>
-          <div className="flex gap-4 md:gap-6 mt-4 lg:mt-12">
+          <div className="flex max-sm:justify-center gap-4 md:gap-6 mt-4 lg:mt-12">
             <button className="p-2 px-3 lg:py-2.5 lg:px-7 bg-secondary-button text-white font-semibold rounded-md">
               <a href="https://drive.google.com/uc?export=download&id=1LzVs7V-sIHj0rnRc8VeNL4vLBBxYlMbQ">
                 Resume

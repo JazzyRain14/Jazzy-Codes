@@ -17,7 +17,7 @@ const AllProjects = [
 
 const MyProjects = () => {
   return (
-    <div className="flex px-6 md:px-14 lg:px-28 flex-1 flex-col justify-around gap-5 h-full w-full">
+    <div className="flex px-6 md:px-14 lg:px-28 flex-1 flex-col gap-5 h-full w-full">
       <div className="">
         <h1 className="text-white flex items-baseline font-bold leading-snug text-[40px] md:text-[65px] lg:text-[95px]">
           BluePrints <GoDotFill size={30} className="text-secondary-button" />
@@ -49,12 +49,12 @@ const MyProjects = () => {
                 alt="project image"
               />
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 href={item.projectLink}
                 className="absolute left-0 w-full h-full flex items-center justify-center hover:bg-black/50 cursor-pointer text-transparent hover:text-white/50"
               >
-                {/* <div className="absolute left-0 w-full h-full flex items-center justify-center hover:bg-black/50 cursor-pointer text-black hover:text-white/50"> */}
                 <FaLink size={20} />
-                {/* </div> */}
               </a>
             </motion.div>
             <motion.div
@@ -78,9 +78,9 @@ const MyProjects = () => {
               <p className="text-white/90 my-2 text-sm lg:text-base">
                 {item.projectMotto}
               </p>
-              <button className="px-5 py-2 my-2 bg-secondary rounded-lg text-white text-lg hover:bg-[#bb273a]">
+              {/* <button className="px-5 py-2 my-2 bg-secondary rounded-lg text-white text-lg hover:bg-[#bb273a]">
                 <a href={item.projectLink}>Check it out</a>
-              </button>
+              </button> */}
             </motion.div>
           </div>
         ))}
